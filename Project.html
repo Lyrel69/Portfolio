@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects | Lyrel Betuin</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <style>
+
+        body{
+            background:#0b0b0b;
+            color:white;
+        }
+
+        .project-section{
+            min-height:100vh;
+            padding:120px 8%;
+        }
+
+        .project-title{
+            text-align:center;
+            font-size:45px;
+            color:#ff4040;
+            margin-bottom:60px;
+        }
+
+        .projects{
+
+            display:grid;
+
+            grid-template-columns:
+            repeat(auto-fit,minmax(320px,1fr));
+
+            gap:35px;
+
+        }
+
+        .project-card{
+
+            background:#171717;
+
+            border-radius:15px;
+
+            overflow:hidden;
+
+            transition:.4s;
+
+        }
+
+        .project-card:hover{
+
+            transform:translateY(-12px);
+
+            box-shadow:0 0 25px rgba(255,64,64,.45);
+
+        }
+
+        .project-image{
+
+            height:220px;
+
+            background:linear-gradient(135deg,#7a0000,#ff4040);
+
+            display:flex;
+
+            justify-content:center;
+
+            align-items:center;
+
+            font-size:70px;
+
+        }
+
+        .project-content{
+
+            padding:25px;
+
+        }
+
+        .project-content h3{
+
+            margin-bottom:15px;
+
+        }
+
+        .project-content p{
+
+            color:#ccc;
+
+            line-height:1.7;
+
+            margin-bottom:25px;
+
+        }
+
+        .project-btn{
+
+            display:inline-block;
+
+            padding:12px 25px;
+
+            background:#ff4040;
+
+            color:white;
+
+            text-decoration:none;
+
+            border-radius:30px;
+
+            transition:.3s;
+
+        }
+
+        .project-btn:hover{
+
+            box-shadow:0 0 20px #ff4040;
+
+        }
+
+        .back-home{
+
+            position:fixed;
+
+            left:30px;
+
+            top:30px;
+
+            color:white;
+
+            text-decoration:none;
+
+            font-size:20px;
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<a href="index.html" class="back-home">
+
+<i class="fa-solid fa-arrow-left"></i>
+
+ Home
+
+</a>
+
+<section class="project-section">
+
+<h1 class="project-title">
+
+My Projects
+
+</h1>
+
+<div class="projects">
+
+<div class="project-card">
+
+<div class="project-image">
+
+<i class="fa-solid fa-user"></i>
+
+</div>
+
+<div class="project-content">
+
+<h3>Portfolio Website</h3>
+
+<p>
+
+A responsive portfolio website built using
+HTML, CSS, and JavaScript with animations,
+smooth scrolling, and interactive sections.
+
+</p>
+
+<a href="#" class="project-btn">
+
+View Project
+
+</a>
+
+</div>
+
+</div>
+
+<div class="project-card">
+
+<div class="project-image">
+
+<i class="fa-solid fa-database"></i>
+
+</div>
+
+<div class="project-content">
+
+<h3>Student Information System</h3>
+
+<p>
+
+A CRUD-based student management system that
+stores student records using a database.
+
+</p>
+
+<a href="#" class="project-btn">
+
+View Project
+
+</a>
+
+</div>
+
+</div>
+
+<div class="project-card">
+
+<div class="project-image">
+
+<i class="fa-solid fa-lock"></i>
+
+</div>
+
+<div class="project-content">
+
+<h3>Password Authentication</h3>
+
+<p>
+
+A JavaScript/Python login authentication
+program with limited login attempts and
+password validation.
+
+</p>
+
+<a href="#" class="project-btn">
+
+View Project
+
+</a>
+
+</div>
+
+</div>
+
+<div class="project-card">
+
+<div class="project-image">
+
+<i class="fa-solid fa-code"></i>
+
+</div>
+
+<div class="project-content">
+
+<h3>Future Project</h3>
+
+<p>
+
+This space is reserved for your future
+software development projects.
+
+</p>
+
+<a href="#" class="project-btn">
+
+Coming Soon
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
